@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Facebook Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="main">
+        <div id="logo">
+          <img src="fb_logo.svg" alt="Facebook Logo" width="100%" />
+        </div>
+        <div id="container">
+          <div class="title">Log in to Facebook</div>
+          <form id="login-form">
+            <div class="form-group"></div>
+
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Email address or phone number"
+                id="email"
+              />
+              <div class="warning-wrapper display-error">
+                <img
+                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/7uzGoFuHgaC.png"
+                  alt=""
+                  width="20"
+                  height="20"
+                />
+              </div>
+              <div class="error-message display-error">
+                The email address or mobile number you entered isn't connected
+                to an account.
+                <span> Find your account and log in. </span>
+              </div>
+              <div class="error-message email" style="display: none">
+                Please input a valid email.
+              </div>
+            </div>
+
+            <div class="form-group password">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="Password"
+                id="password"
+              />
+              <div style="position: relative">
+                <div id="toggle-pw">
+                  <div class="eye"></div>
+                </div>
+              </div>
+              <div class="error-message password" style="display: none"></div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn-login">Log in</button>
+            </div>
+
+            <div class="cta text-center">
+              <div class="signup">
+                <a href="#">Forgotten account?</a>
+                <span class="dot"></span>
+                <a href="#">Sign up for Facebook</a>
+              </div>
+              <div class="forgot-password display-error">
+                <a href="forgot-password.html">Forgotten password?</a>
+              </div>
+            </div>
+          </form>
+          <!-- <div class="separator">
+            <span>or</span>
+          </div>
+          <div class="form-group text-center">
+            <div id="signup-link">Create new account</div>
+          </div> -->
+        </div>
+      </div>
+
+      <section class="footer">
+        <div class="footer-container">
+          <ul class="lang">
+            <li>English (UK)</li>
+            <li>Español</li>
+            <li>日本語</li>
+            <li>Português (Brasil)</li>
+            <li>한국어</li>
+            <li>Bahasa Indonesia</li>
+            <li>Basa Jawa</li>
+            <li>Bahasa Melayu</li>
+            <li>العربية</li>
+            <li>Français (France)</li>
+            <li>Deutsch</li>
+            <li class="">
+              <div class="add-lang">
+                <i class="plus-lang"></i>
+              </div>
+            </li>
+          </ul>
+          <div id="hr-line"></div>
+          <ul class="services">
+            <li>Sign Up</li>
+            <li>Log in</li>
+            <li>Messenger</li>
+            <li>Facebook Lite</li>
+            <li>Watch</li>
+            <li>Places</li>
+            <li>Games</li>
+            <li>Marketplace</li>
+            <li>Meta Pay</li>
+            <li>Meta Store</li>
+            <li>Meta Quest</li>
+            <li>Instagram</li>
+            <li>Bulletin</li>
+            <li>Fundraisers</li>
+            <li>Services</li>
+            <li>Voting Information Centre</li>
+            <li>Privacy Policy</li>
+            <li>Privacy Centre</li>
+            <li>Groups</li>
+            <li>About</li>
+            <li>Create ad</li>
+            <li>Create Page</li>
+            <li>Developers</li>
+            <li>Careers</li>
+            <li>Cookies</li>
+            <li style="padding-right: 14px">
+              AdChoices
+              <i class="adchoices"></i>
+            </li>
+            <li>Terms</li>
+            <li>Help</li>
+            <li>Contact uploading and non-users</li>
+          </ul>
+
+          <div class="copyright">Meta © 2023</div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
